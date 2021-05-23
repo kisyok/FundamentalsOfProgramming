@@ -16,18 +16,40 @@ public class Lab31 {
     /**
      * @param args the command line arguments
      */
-    //1.a
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.println("3*8=");
-        int num =  s.nextInt();
-        if(num==27)
-            System.out.println("correct");
-        else
-            System.out.println("incorrect");
         
+        int num1, num2;
+        System.out.println("Enter the integers: ");
+        num1 = s.nextInt();
+        num2 = s.nextInt();
         
-              
-    }
+        System.out.println("Enter the oprator: ");
+        char operator = s.next().charAt(0);
+        
+        switch(operator){
+            case '+':
+                System.out.println("answer is " + (num1+num2));
+                break;
+            case '-':
+                System.out.println("answer is " + (num1-num2));
+                break;
+            case '*':
+                System.out.println("answer is " + (num1*num2));
+                break;
+            case '/':
+                System.out.println("answer is " + (num1/num2));
+                break;
+            case '%':
+                System.out.println("answer is " + (num1%num2));
+             
+            }
     
-}
+    }
+    }
+
+    
+        
+    
+    
+
